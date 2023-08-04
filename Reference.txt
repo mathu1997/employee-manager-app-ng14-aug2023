@@ -1,0 +1,174 @@
+Webapps 
+----
+  1. Server Side Rendering Apps (SSR)
+      * page refresh 
+      * traditional webapps 
+
+  2. Client Side Rendering Apps (CSR)
+      * pages will not refresh 
+      * modern webapps 
+
+      CSR = SPA (Front End Project) + REST API (Back End Project) 
+
+      SPA (Single Page Apps)
+      -------
+        7 Characteristics 
+        ------
+          1. Page should not reload 
+          2. URL should change 
+          3. History should be maintained 
+          4. Header and Footer should not be loaded again and again 
+          5. The section in b/w header and footer show the contextual update
+          6. Active Menu should be set [TODO]
+          7. Page Title should be changed [TODO]
+
+
+        SPA Tools: 
+        ----
+          #1 ReactJS (library)
+          #2 VueJS (framework)
+          #3 Angular (framework -- To learn)
+          #4 SvelteJS 
+
+Browser
+----
+  1. HTML Renderer 
+  2. CSS Parser 
+  3. JS Engine 
+      var x = 10;
+
+    
+TypeScript 
+----
+  TS => (TSC) => JS 
+
+
+Naming Conventions & Casing Conventions 
+----
+Casing Types 
+  --------
+    1. PascalCase 
+        * Recommended for Object Oriented Program's classes 
+        * also Recommended for Interface in Java & TypeScript 
+
+        examples 
+        ---
+          class CarDetails {
+
+          }
+
+          interface Employee {
+
+          }
+
+    2. camelCase 
+        * Recommended for variables, const, functions, methods in JS & TS 
+        * Recommended for id's of html 
+
+        examples 
+        -----
+          var myCar = 'BMW';
+
+          function getCarInfo() {
+            //....
+          }
+    
+    3. kebab-case
+        * Recommended for URLs 
+        * Recommended for file names, folder names (if not react), assets in front end projects 
+        * Recommended for css classes 
+        * okay for id's of html elements if your architect says okay
+
+        examples 
+        -----
+          btn-primary
+          slideshow-container 
+          youtube-logo.png 
+
+    4. snake_case
+        * never ever use this. 
+        * okay for const in JS & TS if architect accepts
+
+        examples
+        ---
+          const MAX_STUDENTS_PER_CLASS = 30;
+
+
+===========
+  Course Project
+  ----
+    CRUD App 
+    ====
+      create an employee 
+      list employees 
+      fetch employee details 
+      update employee details
+      delete employee 
+
+    Building Blocks 
+    ---
+      Components 
+      Directives 
+      Services
+      Interfaces 
+      Classes [NOT PART OF OUR COURSE]
+      Pipes
+      Guards [NOT PART OF OUR COURSE]
+      Modules
+      Interceptors [NOT PART OF OUR COURSE]
+
+    Concepts
+    ----
+      Data Binding 
+      Cross Components Communication
+      Debugging 
+      Routing 
+      REST API Calls
+      RxJS, Observables, Subscription
+      Life Cycle Hooks
+      Unit Testing 
+      Angular Material Integration 
+      Git 
+
+Thinking in Angular
+---
+  1. Finding the number of components 
+  2. Identifying the hierarchy of the components 
+  3. ...
+
+Project Structure 
+-------
+  1. Building-Block wise Structure
+      src/
+        app/
+          components/
+          directives/
+          services/
+          pipes/
+
+  2. Feature-wise Structure
+      src/
+        app/ 
+          shared/
+          home/
+          concepts/
+          about/
+          contact/
+  
+  3. Mixed Structure (Recommended)
+      src/
+        app/
+          shared/
+            components/
+            services/
+          home/
+            components/
+            directives/
+          concepts/
+            components/
+            directives/
+          about/
+          contact/
+            components/
+            directives/
+            services/
