@@ -5,10 +5,12 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <footer class="text-center">
       <hr>
-      <app-menu-list></app-menu-list>
-      <p>
-        &copy; Copyright 2023 | Arun
-      </p>
+      <app-menu-list>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Back to Top</a>
+        </li>
+      </app-menu-list>
+      <p>&copy; Copyright 2023 | Arun</p>
     </footer>
   `,
   styles: [
