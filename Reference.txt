@@ -172,3 +172,24 @@ Project Structure
             components/
             directives/
             services/
+
+Conventions in Project 
+---
+  1. Should have right project structure [DONE]
+  2. Naming and Casing conventions must be followed [DONE]
+  3. 20% code comments [DONE]
+  4. code should be properly formatted with 2 spaces of indent [DONE]
+  5. code should have not have horizontal scroll bar 
+  6. follow linting rules (will setup linting tool later)
+  7. follow clean code principles
+
+How to setup ESLint?
+===
+  ng add @angular-eslint/schematics@14.4.0 
+
+  Ensure you install version 14.x of @angular-eslint/schematics in your ng 14 project
+
+=====
+
+
+
