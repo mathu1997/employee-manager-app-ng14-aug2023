@@ -1,0 +1,49 @@
+<div>
+  <h1>Important Angular Concepts</h1>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" 
+        id="basic-db-tab" data-bs-toggle="tab" data-bs-target="#basic-db-tab-pane" 
+        type="button"
+        role="tab" aria-controls="basic-db-tab-pane" aria-selected="true">Basic Data Binding</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link"
+       id="cpb-tab" data-bs-toggle="tab" data-bs-target="#cpb-tab-pane" type="button"
+        role="tab" aria-controls="cpb-tab-pane" aria-selected="false">Custom Property Binding</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" 
+        id="ceb-tab" data-bs-toggle="tab" data-bs-target="#ceb-tab-pane" type="button"
+        role="tab" aria-controls="ceb-tab-pane" aria-selected="false">Custom Event Binding</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link"
+       id="directives-tab" data-bs-toggle="tab" data-bs-target="#directives-tab-pane" type="button"
+        role="tab" aria-controls="directives-tab-pane" aria-selected="false">Directives</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="basic-db-tab-pane" role="tabpanel" aria-labelledby="basic-db-tab" 
+    tabindex="0">
+      <h2>Basic Data Binding</h2>
+      <h3>1. Interpolation Example</h3>
+      <p>App Name: {{appName}}</p>
+      <input type="text" value="{{appName}}"> <!-- Not Recommended -->
+
+      <h3>2. Property Binding Example</h3>
+      <input type="text" [value]="companyName">
+
+    </div>
+    <div class="tab-pane fade" id="cpb-tab-pane" role="tabpanel" aria-labelledby="cpb-tab" tabindex="0">
+      <h2>Custom Property Binding</h2>
+    </div>
+    <div class="tab-pane fade" id="ceb-tab-pane" role="tabpanel" aria-labelledby="ceb-tab" tabindex="0">
+      <h2>Custom Event Binding</h2>
+    </div>
+    <div class="tab-pane fade" id="directives-tab-pane" role="tabpanel" aria-labelledby="directives-tab" 
+    tabindex="0">
+      <h2>Directives</h2>
+    </div>
+  </div>
+</div>

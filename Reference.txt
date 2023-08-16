@@ -14,11 +14,11 @@ Webapps
       -------
         7 Characteristics 
         ------
-          1. Page should not reload 
-          2. URL should change 
-          3. History should be maintained 
-          4. Header and Footer should not be loaded again and again 
-          5. The section in b/w header and footer show the contextual update
+          1. Page should not reload [DONE]
+          2. URL should change [DONE]
+          3. History should be maintained [DONE]
+          4. Header and Footer should not be loaded again and again [DONE]
+          5. The section in b/w header and footer should show the contextual update [DONE]
           6. Active Menu should be set [TODO]
           7. Page Title should be changed [TODO]
 
@@ -122,7 +122,7 @@ Casing Types
       Data Binding 
       Cross Components Communication
       Debugging 
-      Routing 
+      Routing [DONE]
       REST API Calls
       RxJS, Observables, Subscription
       Life Cycle Hooks
@@ -193,3 +193,56 @@ How to setup ESLint?
 
 
 
+Routing in Angular 
+-------------------
+Step 0:
+  Identify the pages, the URLs and the matching components
+
+  Page              URL                                   Component 
+  ==================================================================
+  Home              localhost:4200                        HomeComponent
+  Concepts          localhost:4200/concepts               ConceptsComponent
+  Employees         localhost:4200/employees              EmployeesComponent
+  About             localhost:4200/about-us               AboutUsComponent
+  Contact           localhost:4200/contact                ContactComponent
+
+
+Step 1: 
+------
+  goto menu-list.comp.html, setup the URL for the menus.
+
+Step 2: 
+------
+  check the app. URL is not stable. Let's fix it by configuring the routes 
+  For that, you need to know the components to be loaded for the urls 
+  So, Let's create the components 
+
+  ng g c home/components/home -t -s
+  ng g c concepts/components/concepts -s
+  ng g c employees/components/employees -s
+  ng g c about/components/about-us -s -t 
+  ng g c contact/components/contact -s -t 
+
+Step 3:
+------
+  We can now config the routes in app-routing.module.ts 
+
+Step 4:
+------
+  Check the app. URL is stable. But the component in between 
+  header and footer is not getting loaded. Let's fix it. 
+  in app.comp.html, let's use router-outlet 
+
+Step 5: 
+------
+  Check the app. Component is loaded in between header and footer. 
+  Now, let's fix the page refresh problem. 
+
+  in menu-list.comp.html, replace href with routerLink.
+
+Step 6:
+----
+  Check the app. There won't be any page refresh. 
+
+
+====================================================
