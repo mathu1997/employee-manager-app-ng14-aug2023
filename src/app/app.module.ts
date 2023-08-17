@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,7 @@ import { ConceptsComponent } from './concepts/components/concepts.component';
 import { EmployeesComponent } from './employees/components/employees/employees.component';
 import { AboutUsComponent } from './about/components/about-us/about-us.component';
 import { ContactComponent } from './contact/components/contact/contact.component';
+import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
 
 // Main Switching Box
 @NgModule({
@@ -23,11 +25,13 @@ import { ContactComponent } from './contact/components/contact/contact.component
     ConceptsComponent,
     EmployeesComponent,
     AboutUsComponent,
-    ContactComponent
+    ContactComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent] // AppModule is bootstrapped with a comp -- AppComponent

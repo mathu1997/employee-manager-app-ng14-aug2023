@@ -246,3 +246,40 @@ Step 6:
 
 
 ====================================================
+
+Data Binding
+------------
+  keep the data in comp ts and display it in comp.html 
+  TS => HTML 
+
+  1. Interpolation 
+      TS => HTML 
+      {{ }}
+
+  2. Property Binding
+      TS => HTML 
+      []
+
+  3. Event Binding 
+      TS <== HTML
+      ()
+
+  4. Two Way Binding 
+      TS <=> HTML
+      [(ngModel)]
+      Note: You can use this in form elements only
+
+  5. Custom Property Binding
+  6. Custom Event Binding
+
+Cross Component Communication
+---------
+  1. Parent to Child Component Communication 
+      using Custom Property Binding
+
+  2. Child to Parent Component Communication 
+      2.1 using Custom Event Binding (or)
+      2.2 using @ViewChild() decorator [TODO]
+
+  3. Any to Any Component Communication
+      using Services, RxJS/Observables, Subcription
