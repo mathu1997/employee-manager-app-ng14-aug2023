@@ -119,9 +119,9 @@ Casing Types
 
     Concepts
     ----
-      Data Binding 
-      Cross Components Communication
-      Debugging 
+      Data Binding [DONE]
+      Cross Components Communication [PARTIALLY DONE]
+      Debugging [DONE]
       Routing [DONE]
       REST API Calls
       RxJS, Observables, Subscription
@@ -252,34 +252,62 @@ Data Binding
   keep the data in comp ts and display it in comp.html 
   TS => HTML 
 
-  1. Interpolation 
+  1. Interpolation [DONE]
       TS => HTML 
       {{ }}
 
-  2. Property Binding
+  2. Property Binding  [DONE]
       TS => HTML 
       []
 
-  3. Event Binding 
+  3. Event Binding   [DONE]
       TS <== HTML
       ()
 
-  4. Two Way Binding 
+  4. Two Way Binding  [DONE]
       TS <=> HTML
       [(ngModel)]
       Note: You can use this in form elements only
 
-  5. Custom Property Binding
-  6. Custom Event Binding
+  5. Custom Property Binding  [DONE]
+  6. Custom Event Binding [DONE]
 
 Cross Component Communication
 ---------
-  1. Parent to Child Component Communication 
+  1. Parent to Child Component Communication  [DONE]
       using Custom Property Binding
 
-  2. Child to Parent Component Communication 
-      2.1 using Custom Event Binding (or)
+  2. Child to Parent Component Communication [PARTIALLY]
+      2.1 using Custom Event Binding [DONE] (or)
       2.2 using @ViewChild() decorator [TODO]
 
-  3. Any to Any Component Communication
+  3. Any to Any Component Communication [PENDING]
       using Services, RxJS/Observables, Subcription
+
+Debugging
+----
+  1. Compilation Error (during development)
+      Check the terminal / cmd prompt        
+
+  2. Runtime Error (during execution in browser)
+      Check the browser console 
+
+
+Directives
+-----------
+  1. Attribute Directives
+     Examples: routerLink, routerLinkActive, 
+
+  2. Structural Directives
+      * Impacts of these directives can be seen in structure of the page (html)
+
+      Examples: *ngIf, *ngFor, ngSwitch 
+
+  3. Custom Attribute Directives
+      ng g d <directive-name>
+
+  4. Custom Structural Directives
+      ng g d <directive-name>
+    
+  Refer: https://github.com/arunprabu/employee-mgmt-ng-oct2022/tree/master/src/app/concepts/directives
+  

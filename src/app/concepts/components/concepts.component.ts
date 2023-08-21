@@ -21,6 +21,13 @@ export class ConceptsComponent {
     age: 23
   }
 
+  // Step 5 of Custom Event Binding: Let's save the data in a variable
+  reportStatus: any;
+
+  // for directives
+  isLoggedIn = false;
+  skills = ['html', 'js', 'ng', 'react'];
+
   constructor() { }
 
   // public method
@@ -28,5 +35,11 @@ export class ConceptsComponent {
     console.log(event);
     event.target.innerText = 'Clicked';
     // TODO: Disable the button on click
+  }
+
+  // Step 3 of Custom Event Binding: Let's have the event handler
+  handleReportGenerated(event: any){
+    console.log(event);
+    this.reportStatus = event;
   }
 }

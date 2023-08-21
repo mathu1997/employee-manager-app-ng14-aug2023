@@ -13,6 +13,7 @@ import { EmployeesComponent } from './employees/components/employees/employees.c
 import { AboutUsComponent } from './about/components/about-us/about-us.component';
 import { ContactComponent } from './contact/components/contact/contact.component';
 import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
+import { ReportsComponent } from './concepts/components/reports/reports.component';
 
 // Main Switching Box
 @NgModule({
@@ -26,7 +27,8 @@ import { UserInfoComponent } from './concepts/components/user-info/user-info.com
     EmployeesComponent,
     AboutUsComponent,
     ContactComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,

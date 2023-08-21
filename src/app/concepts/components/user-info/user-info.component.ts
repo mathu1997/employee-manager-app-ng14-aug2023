@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-user-info',
   template: `
-    <div>
+    <div class="text-bg-secondary p-3">
       <p>User Age: {{age}}</p>
     </div>
   `,
