@@ -14,6 +14,7 @@ import { AboutUsComponent } from './about/components/about-us/about-us.component
 import { ContactComponent } from './contact/components/contact/contact.component';
 import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
 import { ReportsComponent } from './concepts/components/reports/reports.component';
+import { ColorizerDirective } from './concepts/directives/colorizer.directive';
 
 // Main Switching Box
 @NgModule({
@@ -28,7 +29,8 @@ import { ReportsComponent } from './concepts/components/reports/reports.componen
     AboutUsComponent,
     ContactComponent,
     UserInfoComponent,
-    ReportsComponent
+    ReportsComponent,
+    ColorizerDirective
   ],
   imports: [
     BrowserModule,

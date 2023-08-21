@@ -310,4 +310,5 @@ Directives
       ng g d <directive-name>
     
   Refer: https://github.com/arunprabu/employee-mgmt-ng-oct2022/tree/master/src/app/concepts/directives
-  
+
+==================
