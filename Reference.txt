@@ -100,15 +100,38 @@ Casing Types
     CRUD App 
     ====
       create an employee 
+        http://localhost:4200/employees/add
+        Component: AddEmployeeComponent
+
       list employees 
+        http://localhost:4200/employees/
+        Component: EmployeesComponent
+
       fetch employee details 
+        http://localhost:4200/employees/1
+        http://localhost:4200/employees/2
+        http://localhost:4200/employees/10
+        http://localhost:4200/employees/1003245
+        Component: EmployeeDetailsComponent
+
       update employee details
+        http://localhost:4200/employees/1
+        http://localhost:4200/employees/2
+        http://localhost:4200/employees/10
+        http://localhost:4200/employees/1003245
+        Component: EmployeeDetailsComponent
+
       delete employee 
+        http://localhost:4200/employees/1
+        http://localhost:4200/employees/2
+        http://localhost:4200/employees/10
+        http://localhost:4200/employees/1003245
+        Component: EmployeeDetailsComponent
 
     Building Blocks 
     ---
       Components 
-      Directives 
+      Directives [DONE -- TASK GIVEN]
       Services
       Interfaces 
       Classes [NOT PART OF OUR COURSE]
@@ -260,6 +283,9 @@ Data Binding
       TS => HTML 
       []
 
+      Learn about class binding  [ngClass]
+      Learn about style binding  [ngStyle]
+
   3. Event Binding   [DONE]
       TS <== HTML
       ()
@@ -312,3 +338,37 @@ Directives
   Refer: https://github.com/arunprabu/employee-mgmt-ng-oct2022/tree/master/src/app/concepts/directives
 
 ==================
+
+Angular Forms
+=============
+  1. Template-Driven Forms 
+      * easiest 
+      * can be built with HTML
+      * you can use angular validator in the form of directives
+      * it uses ngModel directive 
+
+      Adv
+      ----
+        1. small learning curve 
+
+      Disadv 
+      -----
+        1. Not suitable for complex validation 
+        2. Not suitable for Unit Testing 
+
+
+  2. Reactive Forms [RECOMMENDED]
+      * easy 
+      * can be built with HTML + TS
+      * you can use angular validator and also use custom validators 
+
+      Adv
+      ----
+        1. suitable for complex validation 
+        2. suitable for Unit Testing 
+
+      Disadv 
+      -----
+        1. larger learning curve 
+
+

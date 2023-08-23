@@ -4,19 +4,16 @@ import { Component, Input, OnInit } from '@angular/core';
   selector: 'app-user-info',
   template: `
     <div class="text-bg-secondary p-3">
-      <p>User Age: {{age}}</p>
+      <p>User Age: {{ age }}</p>
     </div>
   `,
-  styles: [
-  ]
+  styles: [],
 })
 export class UserInfoComponent implements OnInit {
   // create custom property
   @Input() age = 50;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

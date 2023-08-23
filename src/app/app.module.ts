@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +15,8 @@ import { ContactComponent } from './contact/components/contact/contact.component
 import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
 import { ReportsComponent } from './concepts/components/reports/reports.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
+import { AddEmployeeComponent } from './employees/components/add-employee/add-employee.component';
+import { EmployeeDetailsComponent } from './employees/components/employee-details/employee-details.component';
 
 // Main Switching Box
 @NgModule({
@@ -30,14 +32,17 @@ import { ColorizerDirective } from './concepts/directives/colorizer.directive';
     ContactComponent,
     UserInfoComponent,
     ReportsComponent,
-    ColorizerDirective
+    ColorizerDirective,
+    AddEmployeeComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    BrowserModule, 
+    AppRoutingModule, 
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent] // AppModule is bootstrapped with a comp -- AppComponent
 })
-export class AppModule { }
+export class AppModule {}
