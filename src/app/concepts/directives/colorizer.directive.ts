@@ -7,7 +7,7 @@ import { Directive, ElementRef, Renderer2 } from '@angular/core';
 export class ColorizerDirective {
   constructor(
     private elRef: ElementRef,
-    private renderer: Renderer2,
+    private renderer: Renderer2
   ) {
     console.log('Inside ColorizerDirective Constructor');
     // 1. find out the element in which this directive is used

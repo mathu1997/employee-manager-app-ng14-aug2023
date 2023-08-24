@@ -17,6 +17,7 @@ import { ReportsComponent } from './concepts/components/reports/reports.componen
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
 import { AddEmployeeComponent } from './employees/components/add-employee/add-employee.component';
 import { EmployeeDetailsComponent } from './employees/components/employee-details/employee-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 // Main Switching Box
 @NgModule({
@@ -40,7 +41,8 @@ import { EmployeeDetailsComponent } from './employees/components/employee-detail
     BrowserModule, 
     AppRoutingModule, 
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent] // AppModule is bootstrapped with a comp -- AppComponent

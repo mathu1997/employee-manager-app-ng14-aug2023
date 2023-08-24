@@ -132,8 +132,8 @@ Casing Types
     ---
       Components 
       Directives [DONE -- TASK GIVEN]
-      Services
-      Interfaces 
+      Services [TODAY]
+      Interfaces  [TOMORROW]
       Classes [NOT PART OF OUR COURSE]
       Pipes
       Guards [NOT PART OF OUR COURSE]
@@ -146,9 +146,9 @@ Casing Types
       Cross Components Communication [PARTIALLY DONE]
       Debugging [DONE]
       Routing [DONE]
-      REST API Calls
-      RxJS, Observables, Subscription
-      Life Cycle Hooks
+      REST API Calls [TODAY]
+      RxJS, Observables, Subscription [TODAY and TOMORROW]
+      Life Cycle Hooks [TODAY]
       Unit Testing 
       Angular Material Integration 
       Git 
