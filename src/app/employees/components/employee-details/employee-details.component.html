@@ -4,13 +4,13 @@
     <div class="card col-md-12">
       <!-- TODO: show loader/spinner here-->
       <div class="card-body">
-        <h5 class="card-title">John</h5>
+        <h5 class="card-title">{{employee?.name}}</h5>
         <p class="card-text">
           Some quick example text to build on the card title and make up
           the bulk of the card's content.
         </p>
-        <p>Phone: 4356789</p>
-        <p>Email: j@k.com</p>
+        <p>Phone: {{employee?.phone}}</p>
+        <p>Email: {{employee?.email}}</p>
         <button
           type="button"
           class="btn btn-primary"
@@ -40,9 +40,9 @@
                   data-bs-dismiss="modal"
                   aria-label="Close"></button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body" *ngIf="dupEmployee">
                 <!-- if you want html validation use ngNativeValidate in form tag -->
-                <form>
+                <form #f="ngForm" (ngSubmit)="handleUpdateEmployee(f)">
                   <div class="form-group row mb-3">
                     <label
                       for="staticEmail"
@@ -54,7 +54,8 @@
                         type="text"
                         class="form-control"
                         placeholder="Enter name"
-                        name="empName"/>
+                        name="empName"
+                        [(ngModel)]="dupEmployee.name"/>
                       <div class="invalid-feedback">
                         Name is Required
                       </div>
@@ -71,7 +72,9 @@
                         type="text"
                         class="form-control"
                         placeholder="Enter Phone"
-                        name="phone"/>
+                        name="phone"
+                        [(ngModel)]="dupEmployee.phone"
+                        />
                       <div class="invalid-feedback">
                         Phone is Required
                       </div>
@@ -89,6 +92,7 @@
                         class="form-control"
                         name="email"
                         placeholder="Enter Email"
+                        [(ngModel)]="dupEmployee.email"
                         />
                       <div class="invalid-feedback">
                         <div>

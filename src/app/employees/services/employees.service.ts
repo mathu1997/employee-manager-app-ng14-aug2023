@@ -38,6 +38,16 @@ export class EmployeesService {
       }));
   }
 
+  // Read 
+  getEmployeeById(employeeId: string | null){
+    return this.http.get(
+      'https://jsonplaceholder.typicode.com/users/' + employeeId
+    ).pipe(map((res: any) => {
+      console.log(res);
+      return res;
+    }));
+  }
+
   // Update
   // Delete
 }
