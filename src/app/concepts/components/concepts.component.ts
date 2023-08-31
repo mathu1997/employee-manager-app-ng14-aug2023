@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-concepts',
   templateUrl: './concepts.component.html',
-  styles: [],
+  styles: []
 })
 export class ConceptsComponent {
   // create all your public or private variables
@@ -17,7 +17,7 @@ export class ConceptsComponent {
   // for custom prop binding (parent to child comp commn)
   user = {
     name: 'John',
-    age: 23,
+    age: 23
   };
 
   // Step 5 of Custom Event Binding: Let's save the data in a variable

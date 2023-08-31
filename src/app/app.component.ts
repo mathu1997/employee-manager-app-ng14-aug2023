@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root', // the comp is exposed in a element selector 'app-root' used in index.html
   templateUrl: './app.component.html', // html is must -- it should be only one
-  styleUrls: ['./app.component.css'], // css is optional and can be many
+  styleUrls: ['./app.component.css'] // css is optional and can be many
 })
 export class AppComponent {
   // ts

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { EmployeesService } from '../../services/employees.service';
+import { IEmployee } from '../../models/iemployee';
 
 @Component({
   selector: 'app-add-employee',
@@ -34,7 +35,7 @@ export class AddEmployeeComponent implements OnInit {
 
     // Step #1 of Form Submission. Send the above the data to the service class
     this.employeesService.createEmployee(this.addEmployeeForm.value)
-      .subscribe((res: any) => { // Step #2 of Form Submission.Get the response from the service class
+      .subscribe((res: IEmployee) => { // Step #2 of Form Submission.Get the response from the service class
         console.log(res);
         this.isSaved = true;
         // reset the form after submission if successful

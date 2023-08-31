@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeesService } from '../../services/employees.service';
 import { ActivatedRoute } from '@angular/router';
+import { IEmployee } from '../../models/iemployee';
 
 @Component({
   selector: 'app-employee-details',
@@ -8,8 +9,8 @@ import { ActivatedRoute } from '@angular/router';
   styles: []
 })
 export class EmployeeDetailsComponent implements OnInit {
-  employee: any;
-  dupEmployee: any;
+  employee!: IEmployee;
+  dupEmployee!: IEmployee;
 
   constructor(
     private employeesService: EmployeesService,
@@ -25,13 +26,13 @@ export class EmployeeDetailsComponent implements OnInit {
     // let's send req to rest api thru service
     this.employeesService
       .getEmployeeById(employeeId)
-      .subscribe((res: any) => {
+      .subscribe((res: IEmployee) => {
         console.log(res);
         this.employee = res;
         // cloning the employee
         this.dupEmployee = { 
           ...this.employee
-        }
+        };
       });
   }
 
