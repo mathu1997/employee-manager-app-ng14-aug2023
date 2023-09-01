@@ -9,15 +9,13 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { MenuListComponent } from './shared/components/menu-list/menu-list.component';
 import { HomeComponent } from './home/components/home/home.component';
 import { ConceptsComponent } from './concepts/components/concepts.component';
-import { EmployeesComponent } from './employees/components/employees/employees.component';
 import { AboutUsComponent } from './about/components/about-us/about-us.component';
 import { ContactComponent } from './contact/components/contact/contact.component';
 import { UserInfoComponent } from './concepts/components/user-info/user-info.component';
 import { ReportsComponent } from './concepts/components/reports/reports.component';
 import { ColorizerDirective } from './concepts/directives/colorizer.directive';
-import { AddEmployeeComponent } from './employees/components/add-employee/add-employee.component';
-import { EmployeeDetailsComponent } from './employees/components/employee-details/employee-details.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EmployeesModule } from './employees/employees.module';
 
 // Main Switching Box
 @NgModule({
@@ -28,21 +26,18 @@ import { HttpClientModule } from '@angular/common/http';
     MenuListComponent,
     HomeComponent,
     ConceptsComponent,
-    EmployeesComponent,
     AboutUsComponent,
     ContactComponent,
     UserInfoComponent,
     ReportsComponent,
-    ColorizerDirective,
-    AddEmployeeComponent,
-    EmployeeDetailsComponent
+    ColorizerDirective
   ],
   imports: [
     BrowserModule, 
     AppRoutingModule, 
     FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    EmployeesModule
   ],
   providers: [],
   bootstrap: [AppComponent] // AppModule is bootstrapped with a comp -- AppComponent
