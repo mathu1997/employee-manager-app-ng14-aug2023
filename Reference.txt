@@ -132,12 +132,12 @@ Casing Types
     ---
       Components 
       Directives [DONE -- TASK GIVEN]
-      Services [TODAY]
-      Interfaces  [TOMORROW]
+      Services [DONE]
+      Interfaces  [DONE]
       Classes [NOT PART OF OUR COURSE]
       Pipes
       Guards [NOT PART OF OUR COURSE]
-      Modules
+      Modules 
       Interceptors [NOT PART OF OUR COURSE]
 
     Concepts
@@ -146,8 +146,8 @@ Casing Types
       Cross Components Communication [PARTIALLY DONE]
       Debugging [DONE]
       Routing [DONE]
-      REST API Calls [TODAY]
-      RxJS, Observables, Subscription [TODAY and TOMORROW]
+      REST API Calls [DONE]
+      RxJS, Observables, Subscription [DONE]
       Life Cycle Hooks [TODAY]
       Unit Testing 
       Angular Material Integration 
@@ -372,3 +372,4 @@ Angular Forms
         1. larger learning curve 
 
 
+Modules

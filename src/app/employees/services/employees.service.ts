@@ -45,14 +45,14 @@ export class EmployeesService {
       .get<IEmployee[]>('https://jsonplaceholder.typicode.com/users')
       .pipe(
         map((res: IEmployee[]) => {
+          // sort, filter, remove, add, convert, add, append
           // Step 3: get the response from the REST API
           console.log(res);
           return res; // Step 4: send the response to the comp
         })
-      );
+      )
   }
-
-  // Read
+  
   getEmployeeById(employeeId: string | null): Observable<IEmployee> {
     return this.http
       .get<IEmployee>(
